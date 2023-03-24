@@ -1032,34 +1032,44 @@ template {
   text-transform: uppercase;
 }
 
+.options {
+  position: relative;
+}
 .options .container {
+  margin: 0 auto;
   position: relative;
   max-width: 1140px;
   padding: 80px 0;
 }
-.options .container .challenges {
+.options .container .challenges,
+.options .container .solutions {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 72px;
 }
-.options .container .challenges__item {
+.options .container .challenges__item,
+.options .container .solutions__item {
   position: relative;
   width: 360px;
   height: 255px;
   padding: 0 84px 69px 84px;
 }
-.options .container .challenges__item-subicon {
+.options .container .challenges__item-subicon,
+.options .container .solutions__item-subicon {
   position: absolute;
   width: 90px;
   height: 93px;
   right: 0;
   bottom: 0;
 }
-.options .container .challenges__icon {
+.options .container .challenges__icon,
+.options .container .solutions__icon {
   width: 192px;
   height: 186px;
 }
-.options .container .challenges__descr {
+.options .container .challenges__descr,
+.options .container .solutions__descr {
   position: absolute;
   width: 236px;
   height: 43px;
@@ -1070,6 +1080,32 @@ template {
   text-align: center;
   bottom: 45px;
   right: 60px;
+}
+.options .container .challenges .solutions__descr,
+.options .container .solutions .solutions__descr {
+  position: absolute;
+  width: 265px;
+  height: 43px;
+  color: #393939;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  right: 45px;
+}
+.options__arrow {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-bottom: 33px;
+}
+.options__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 37px;
+  color: #393939;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 body {

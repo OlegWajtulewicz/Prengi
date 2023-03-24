@@ -1,12 +1,17 @@
 .options {
+    position: relative;
+    
     .container {
+        margin: 0 auto;
         position: relative;
         max-width: 1140px;
         padding: 80px 0;
-        .challenges {
+        .challenges,
+        .solutions {
             position: relative;
             display: flex;
             justify-content: space-between;
+            margin-bottom: 72px;
 
             &__item {
                 position: relative;
@@ -37,14 +42,31 @@
                 bottom: 45px;
                 right: 60px;
             }
-
-            
-
-            
-            
+        .solutions__descr {
+                position: absolute;
+                width: 265px;
+                height: 43px;
+                color: #393939;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 26px;
+                text-align: center;
+                right: 45px;
+            }   
         }
-    }
-    
-    
-    
+    } 
+    &__arrow {
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        margin-bottom: 33px;
+    } 
+    &__title {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 37px;
+        color: #393939;
+        font-size: 48px;
+        font-weight: 700;
+    }  
 }
