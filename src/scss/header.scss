@@ -1,0 +1,56 @@
+.contacts {
+
+    .container {
+        max-width: 1140px;
+        margin: 0 auto; 
+        padding: 19px 0; 
+        display: flex;
+        justify-content: space-between;         
+    }
+    &__item {
+        height: 50px;
+        display: flex;
+        
+
+        img {
+            width: 28px;
+            height: 21px;
+            margin-right: 11px;  
+        }
+    }
+    &__contact {
+        text-decoration: none;
+        color: #242424;
+        font-family: "Roboto - Light";
+        max-width: 189px;
+        a {
+            text-decoration: none;
+            color: #242424;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Roboto-Bold';
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+    &__phone {
+        font-size: 12px;
+        text-decoration: none;
+        &-top {
+            position: relative;
+            top: -6px;
+        }
+    }
+    &__adres {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    &__mail {
+        position: relative;
+        top: -12px;
+    }
+}          

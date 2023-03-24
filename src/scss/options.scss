@@ -1,0 +1,50 @@
+.options {
+    .container {
+        position: relative;
+        max-width: 1140px;
+        padding: 80px 0;
+        .challenges {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            &__item {
+                position: relative;
+                width: 360px;
+                height: 255px;
+                padding: 0 84px 69px 84px;
+                &-subicon {
+                    position: absolute;
+                    width: 90px;
+                    height: 93px;
+                    right: 0;
+                    bottom: 0;
+                }   
+            }
+            &__icon {
+                width: 192px;
+                height: 186px;   
+            }
+            &__descr {
+                position: absolute;
+                width: 236px;
+                height: 43px;
+                color: #393939;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 26px;
+                text-align: center;
+                bottom: 45px;
+                right: 60px;
+            }
+
+            
+
+            
+            
+        }
+    }
+    
+    
+    
+}

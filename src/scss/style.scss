@@ -1,0 +1,18 @@
+@import "libs/fonts";
+@import "libs/bootstrap-reboot.min";
+@import "libs/normalize.scss";
+@import "libs/slick.scss";
+
+@import "header";
+@import "promo";
+@import "options";
+
+body {
+	font-family: 'Roboto';	
+}
+html {
+    scroll-behavior: smooth; 
+}
+body.lock {
+    overflow: hidden;
+}
