@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
 @font-face {
   font-family: Roboto;
   font-display: swap;
@@ -1039,7 +1040,7 @@ template {
   margin: 0 auto;
   position: relative;
   max-width: 1140px;
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .options .container .challenges,
 .options .container .solutions {
@@ -1106,6 +1107,94 @@ template {
   color: #393939;
   font-size: 48px;
   font-weight: 700;
+}
+
+.solution {
+  background: url("../img/Prengi_bacg.png") center center/cover no-repeat;
+  width: 100%;
+  min-height: 889px;
+}
+.solution__container {
+  position: relative;
+  max-width: 1140px;
+  padding: 80px 50px 60px 50px;
+  margin: 0 auto;
+}
+.solution .title {
+  width: 625px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto 32px auto;
+}
+.solution .container {
+  position: relative;
+  width: 947px;
+  height: 560px;
+  margin: 0 auto;
+  bottom: -100px;
+}
+.solution .container img {
+  margin: 0 auto;
+}
+.solution .container .slick-prev, .solution .container .slick-next {
+  background-color: transparent;
+  text-indent: -9999px;
+  background: url("../img/left2.png") center center/cover no-repeat;
+  border: none;
+  position: absolute;
+  z-index: 5;
+  left: -50px;
+  width: 20px;
+  transform: translateY(-50%);
+  bottom: 45%;
+}
+.solution .container .slick-prev img, .solution .container .slick-next img {
+  width: 18px;
+  height: 60px;
+}
+.solution .container .slick-next {
+  text-indent: -9999px;
+  background: url("../img/right2.png") center center/cover no-repeat;
+  left: auto;
+  right: -5%;
+}
+.solution .container .slick-dots {
+  display: none !important;
+}
+.solution .container .catalog__tabs {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 843px;
+  height: 65px;
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: -100px;
+  transform: translateX(50%);
+  right: 50%;
+  border: solid 1px white;
+  border-radius: 3px;
+  padding-left: 20px;
+}
+.solution .container .catalog__tabs a {
+  text-decoration: none;
+  position: relative;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-right: solid 0.1px white;
+  top: 7px;
+  font-size: 14px;
+  color: #ffffff;
+  padding-right: 25px;
+}
+.solution .container .catalog__tabs a:nth-child(6) {
+  border-right: none !important;
+  width: 90px;
 }
 
 body {
