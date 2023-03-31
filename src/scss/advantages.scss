@@ -18,11 +18,13 @@
     &__wrapper {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(2, 570px);
-        grid-template-rows: repeat(3, 355px);
+        //grid-template-columns: repeat(2, 570px);
+        grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+        //grid-template-rows: repeat(3, 355px);
     }
     &__item {
         position: relative;
+        margin: 0 auto;
         img {
             width: 570px;
             height: 355px;
