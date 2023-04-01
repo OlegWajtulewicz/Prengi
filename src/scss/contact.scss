@@ -11,6 +11,10 @@
         position: relative;
         margin: 80px auto 74px auto;
         padding: 31px;
+        @include _480 {
+            height: 280px;
+            width: 280px;
+        }
         img {
             height: 240px;
             width: 240px;
@@ -25,6 +29,17 @@
         text-align: center;
         width: 640px;
         margin: 0 auto 30px auto;
+        @include _767 {
+           font-size: 25px; 
+           width: 500px;
+        }
+        @include _600 {
+           font-size: 20px;
+           width: 395px; 
+        }
+        @include _480 {
+            width: 310px;
+        }
     }
     &__btn {
         position: absolute;

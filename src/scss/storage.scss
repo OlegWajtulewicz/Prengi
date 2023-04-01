@@ -7,6 +7,12 @@
         width: 100vw;
         display: inline-flex;
         justify-content: center;
+        @include _979 {
+            display: grid;
+            justify-items: center;
+            overflow-x: scroll;
+            //grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+        }
     }
     &__title {
         position: absolute;

@@ -4,6 +4,12 @@
     color: #ffffff;
     top: 0;
     min-height: 559px;
+    @include _767 {
+        min-height: 660px;
+    }
+    @include _600 {
+        min-height: 1090px;
+    }
     .container {
         max-width: 1140px;
         margin: 50px auto 45px auto;
@@ -11,7 +17,10 @@
             &-modals {
                 position: relative;               
                 height: 314px;
-                width: 263px;   
+                width: 263px; 
+                @include _767 {
+                    font-size: 12px;
+                }  
             }
             &__title {
                 font-size: 16px;
@@ -20,7 +29,17 @@
             &__main {
                 display: flex;
                 justify-content: space-between;
-                padding-top: 49px;
+                padding: 49px 15px 0 15px;
+                @include _767 {
+                    min-height: 560px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+                }
+                @include _600 {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 15%;
+                }
                 img {
                     height: 61px;  
                     width: 177px;
@@ -47,7 +66,8 @@
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 19px;
-                width: 377px;
+                max-width: 377px;
+                padding-right: 10px;
             }
         }
 
@@ -63,7 +83,7 @@
     }
     hr {
         color:#ffffff;
-        width: 1171px;
+        width: 93%;
         height: 1px;
         opacity: 0.3;
         z-index: 200;
@@ -73,4 +93,10 @@
         left: 50%; 
     }
 } 
+.wrapper-industries {
+    margin-right: 10px;
+    @include _767 {
+        font-size: 12px;
+    }  
+}
 

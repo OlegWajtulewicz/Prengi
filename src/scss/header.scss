@@ -1,11 +1,18 @@
 .contacts {
+    @include _767 {
+        display: none;
+    }
 
     .container {
         max-width: 1140px;
         margin: 0 auto; 
         padding: 19px 0; 
         display: flex;
-        justify-content: space-between;         
+        justify-content: space-between; 
+        @include _1170 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }        
     }
     &__item {
         height: 50px;
