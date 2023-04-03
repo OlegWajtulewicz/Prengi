@@ -1,6 +1,7 @@
 .contacts {
+    overflow-x: auto;
     @include _767 {
-        display: none;
+        //display: none;
     }
 
     .container {
@@ -12,13 +13,18 @@
         @include _1170 {
             padding-left: 15px;
             padding-right: 15px;
+            
         }        
     }
     &__item {
         height: 50px;
         display: flex;
-        
-
+        width: 222px;
+        white-space: nowrap;
+        position: relative;
+        @include _1170 {
+            padding-right: 5px;
+        }
         img {
             width: 28px;
             height: 21px;
@@ -58,6 +64,27 @@
     }
     &__mail {
         position: relative;
-        top: -12px;
+        top: 12px;
+        right: 123px;
     }
-}          
+} 
+
+.contacts::-webkit-scrollbar {
+    //width: 13px;
+    height: 8px;
+  }
+  
+.contacts::-webkit-scrollbar-track {
+    background: #d4d4d4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+  }
+  
+.contacts::-webkit-scrollbar-thumb {
+    background: #939393;
+    border-radius: 8px;
+    border: 3px solid #d4d4d4;
+  }
+  
+.contacts::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+  }
